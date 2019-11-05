@@ -4,7 +4,7 @@ namespace Learning
 {
     class Variables
     {
-        static void variables()
+        static void VariablesFunction()
         {
             Console.WriteLine("Hello World!");
             int n;
@@ -37,9 +37,9 @@ namespace Learning
         }
         static void Main(string[] args)
         {
-            //variables();
+            //VariablesFunction();
             
-            DataTypes.dataTypes();
+            DataTypes.DataTypesFunction();
 
             Console.ReadLine();
         }
