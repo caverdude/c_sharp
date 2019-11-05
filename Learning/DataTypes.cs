@@ -16,13 +16,22 @@ namespace Learning
             char b = 'b';
             char c = 'c';
             Console.WriteLine("{0}"+ b + c,a);
-            Console.WriteLine(a);
+            Console.WriteLine(a+0);
             string sup = "Sup world? Suuuuuup?";
             Console.WriteLine(sup);
 
+            string multi = "This ia multi"+
+                "line"+
+                "string.";
 
-            //github test
+            string nullstring = "";
+            char nullchar='\0';
+            if(nullstring!=""+nullchar) Console.WriteLine("\\0 is not equal to \"\"");
+
+            
 
         }
+
+       
     }
 }

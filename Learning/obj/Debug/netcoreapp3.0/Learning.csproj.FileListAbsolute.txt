@@ -1,0 +1,11 @@
+C:\dev\github\c_sharp\Learning\obj\Debug\netcoreapp3.0\Learning.AssemblyInfoInputs.cache
+C:\dev\github\c_sharp\Learning\obj\Debug\netcoreapp3.0\Learning.AssemblyInfo.cs
+c:\dev\github\c_sharp\Learning\obj\Debug\netcoreapp3.0\Learning.csprojAssemblyReference.cache
+c:\dev\github\c_sharp\Learning\bin\Debug\netcoreapp3.0\Learning.exe
+c:\dev\github\c_sharp\Learning\bin\Debug\netcoreapp3.0\Learning.deps.json
+c:\dev\github\c_sharp\Learning\bin\Debug\netcoreapp3.0\Learning.runtimeconfig.json
+c:\dev\github\c_sharp\Learning\bin\Debug\netcoreapp3.0\Learning.runtimeconfig.dev.json
+c:\dev\github\c_sharp\Learning\bin\Debug\netcoreapp3.0\Learning.dll
+c:\dev\github\c_sharp\Learning\bin\Debug\netcoreapp3.0\Learning.pdb
+c:\dev\github\c_sharp\Learning\obj\Debug\netcoreapp3.0\Learning.dll
+c:\dev\github\c_sharp\Learning\obj\Debug\netcoreapp3.0\Learning.pdb
