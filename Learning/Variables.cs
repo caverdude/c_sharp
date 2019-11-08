@@ -39,7 +39,9 @@ namespace Learning
         {
             //VariablesFunction();
             
-            DataTypes.DataTypesFunction();
+            //DataTypes.DataTypesFunction();
+            
+            Strings.DoStrings();
 
             Console.ReadLine();
         }
