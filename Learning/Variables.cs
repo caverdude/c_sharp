@@ -38,10 +38,12 @@ namespace Learning
         static void Main(string[] args)
         {
             //VariablesFunction();
-            
+
             //DataTypes.DataTypesFunction();
-            
-            Strings.DoStrings();
+
+            //Strings.DoStrings();
+            //Strings.DoStrings2();
+            Strings.DoStrings3();
 
             Console.ReadLine();
         }

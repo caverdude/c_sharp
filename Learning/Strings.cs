@@ -26,7 +26,7 @@ namespace Learning
             Student st = new Student();
             Console.WriteLine("Length:" + s5.Length);
             // String object or string keyword is same thing.
-            st.Name="John";
+            st.Name = "John";
             st.Name.ToUpper();
             Console.WriteLine("Student.Name=" + st.Name);
 
@@ -42,13 +42,13 @@ namespace Learning
             String name = "jOhn";
             String properName =
                 char.ToUpper(name[0]).ToString() + name.Substring(1, name.Length - 1).ToLower();
-            Console.WriteLine(name+' '+properName);
+            Console.WriteLine(name + ' ' + properName);
             Console.WriteLine(String.Compare("JOHN", "JOHN".ToUpper()));
             Console.WriteLine(String.Compare("JoHN", "JoHN".ToUpper()));
             Console.WriteLine();
 
             // treat a string like a character array
-            foreach(char c in st.Name)
+            foreach (char c in st.Name)
             {
                 Console.WriteLine(c);
             }
@@ -65,6 +65,10 @@ namespace Learning
             Console.WriteLine("Hello".Contains("ll"));
 
             Console.WriteLine(" \nHello World!\r   \t".Trim());
+
+        }
+
+        public static void DoStrings2() {
             Console.WriteLine("\n Type a whole number or 'quit'");
             try
             {
@@ -75,8 +79,8 @@ namespace Learning
                     if (IsAllDigits(input))
                     {
 
-                        int n= Convert.ToInt32(input);
-                        Console.WriteLine(""+n+" x 2 = "+(n * 2));
+                        int n = Convert.ToInt32(input);
+                        Console.WriteLine("" + n + " x 2 = " + (n * 2));
                     }
                     else
                     {
@@ -84,9 +88,9 @@ namespace Learning
                         continue;
                     }
                 }
-            } catch(Exception e)
+            } catch (Exception e)
             {
-                Console.WriteLine("Error!"+e.ToString());
+                Console.WriteLine("Error!" + e.ToString());
             }
             Console.WriteLine("\n Enter line coordinates (x,y,x2,y2,... etc) or 'quit'");
             try
@@ -105,8 +109,8 @@ namespace Learning
                         c++;
                         if (IsAllDigits(coord))
                         {
-                            if (c % 2 == 0) Console.Write("y"+(c/2)+"=");
-                            else Console.Write("x"+(c/2)+"=");
+                            if (c % 2 == 0) Console.Write("y" + (c / 2) + "=");
+                            else Console.Write("x" + (c / 2) + "=");
                             int n = Convert.ToInt32(coord);
                             Console.WriteLine(n);
                         }
@@ -123,9 +127,64 @@ namespace Learning
                 Console.WriteLine("Error!" + e.ToString());
             }
 
+        }
+        public static void DoStrings3()
+        {
+
             String[] months = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul" };
             String allMonths = string.Join(":", months);
             Console.WriteLine(allMonths);
+
+            Console.WriteLine();
+
+            Console.WriteLine("Supervisor".PadLeft(10) + ":Larry".PadRight(10) + ":");
+            Console.WriteLine("Employee".PadLeft(10) + ":Tom".PadRight(10) + ":");
+            Console.WriteLine("Gofor".PadLeft(10) + ":Alfred".PadRight(10) + ":");
+
+            Console.WriteLine(string.Concat("Larry", "Gray"));
+
+            string formatString = string.Format("{0} {1} {2}", 1, 2, 3);
+            Console.WriteLine(formatString);
+            Console.WriteLine("{0} {1} {2}", 4, 5, 6);
+
+            Console.WriteLine("{0:C}", 25.19);
+            Console.WriteLine("{0:C}", -5.2);
+            Console.WriteLine("{0:D5}", 22);
+            Console.WriteLine("{0:E}", 3923.23432);
+            Console.WriteLine("{0:E}", 0.00002343);
+
+            Console.WriteLine("{0:N}", 203023.09883);
+            Console.WriteLine("{0:N1}", 203023.09883);
+            Console.WriteLine("{0:N0}", 203023.09883);
+
+            Console.WriteLine("{0:X}", 231);
+            Console.WriteLine("{0:###.##}", 52.1);
+            Console.WriteLine("{0:###.##}", 2.12);
+            Console.WriteLine("{0:###.##}", 6352.32);
+
+            Console.WriteLine("{0:#00.##%}", .2434);
+            Console.WriteLine("{0:#00.##%}", .08938);
+
+            StringBuilder build = new StringBuilder();
+            build.Append("Lary");
+            build.Append("Don");
+            build.Append("Gray");
+            Console.WriteLine(build);
+
+            StringBuilder build2 = new StringBuilder();
+            for (int i=0; i < months.Length; i++)
+            {
+                build2.Append(months[i]);
+            }
+            Console.WriteLine(build2.ToString());
+
+            StringBuilder name = new StringBuilder("larry");
+            name[0] = char.ToUpper(name[0]);
+            Console.WriteLine(name.ToString());
+
+
+
+
 
 
 
