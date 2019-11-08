@@ -43,7 +43,11 @@ namespace Learning
 
             //Strings.DoStrings();
             //Strings.DoStrings2();
-            Strings.DoStrings3();
+            //Strings.DoStrings3();
+
+            Operators.DoOperators();
+
+
 
             Console.ReadLine();
         }
